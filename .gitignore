@@ -1,0 +1,7 @@
+.vs/
+.vscode/
+build
+out/
+.cache/
+bin/
+node_modules/
