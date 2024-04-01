@@ -15,14 +15,8 @@ app.whenReady().then(() => {
 
   let root = process.env.MICROLIFE_UI_ROOT
   if (typeof root !== 'string' || root.trim().length === 0) {
-    // root = path.join(path.dirname(process.execPath), 'ui')
-    root = 'http://localhost:6813/ui/desktop/'
+    root = 'http://localhost:6813/web/'
   }
-
-  // mainWindowSession.protocol.handle('atom', (request) => {
-  // 	const filePath = path.join(root, request.url.slice('atom://'.length))
-  // 	return net.fetch(url.pathToFileURL(filePath).toString())
-  // })
 
   mainWindow = new BrowserWindow({
     title: 'Microlife Desktop',
